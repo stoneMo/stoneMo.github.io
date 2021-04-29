@@ -1,451 +1,529 @@
-<!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
-<head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Haofan Wang graduated from Electric and Computer Engineering at CMU, advised by Dr.Pitor Mardziel. His research focuses on robustness and explainability of neural network.">
+    <meta name="author" content="Haofan Wang">
+    <meta name="keywords" content="Haofan Wang,Computer,Vision,Machine,Learning,Robotics">
 
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Shentong Mo</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+    <!-- favicon -->
+    <link href="favicon.png" rel=icon>
 
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
+      ga('create', 'UA-104092499-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
 
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
+    <!-- bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
+    <!-- font-awesome -->
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/solid.min.css" rel="stylesheet">
+    <link href="css/brands.min.css" rel="stylesheet">
 
-</head>
+    <!-- academicons -->
+    <link href="css/academicons.min.css" rel="stylesheet">
 
-<body>
+    <!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
 
-   <!-- Header
-   ================================================== -->
-   <header id="home">
-
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
-            <li><a class="smoothscroll" href="#publications">Publications</a></li>
-            <!-- <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li> -->
-            <!-- <li><a class="smoothscroll" href="#contact">Contact</a></li> -->
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
-
-      <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">Shentong Mo</h1>
-            <h3>As a researcher in <span>artificial intelligence</span>, I work primarily in the intersection of <span>deep learning</span> and <span>computer vision</span> to create awesome and effective methods for our community around the world. 
-            <br> Let's <a class="smoothscroll" href="#about">start scrolling</a>
-            and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
-            <hr />
-            <ul class="social">
-               <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
-               <li><a href="https://github.com/stoneMo"><i class="fa fa-github"></i></a></li>
-               <li><a href="mailto:shentonm@andrew.cmu.edu"><i class="fa fa-envelope-o"></i></a></li>
+    <title>Haofan Wang</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <!-- Navbar content -->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><serif>Haofan Wang</serif></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-item nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Links
+                </a>
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-xl-left" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#bio">Biography</a>
+                  <a class="dropdown-item" href="#pub">Publications</a>
+                  <a class="dropdown-item" href="#edu">Education</a>
+                  <a class="dropdown-item" href="#exp">Experience</a>
+                </div>
+              </li>
             </ul>
-         </div>
+          </div>
+        </div>
+      </nav>
+      <div class="sec-wrapper home-wrapper" id="home">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="picture">
+<!--               <div class="col-sm-auto col-wrapper">
+                <img src="images/WechatIMG18.jpeg" class="img-responsive" alt="[Pingchuan :)]"
+                     onmouseover="this.src='images/WechatIMG18.jpeg'" onmouseout="this.src='images/WechatIMG18.jpeg.jpg'"/>
+              </div> -->
+              <div class="col-sm-auto col-wrapper">
+                <img src="images/sefile.JPG">
+              </div>
+            </div>
+            <div class="col-sm col-wrapper">
+              <div class="description">
+                <h1 class="name">Shentong Mo</h1>
+                <!-- <div>Seeking for a full-time job</div> -->
+                <div>School Email: shentonm (at) andrew.cmu.edu</div>
+                <!-- <div>Personal Email: haofanwang.ai (at) gmail.com</div> -->
+                <ul class="social-icon">
+                  <li><a title="Google Scholar" href="https://scholar.google.com/citations?user=6aYncPAAAAAJ&hl=en"><i class="ai ai-google-scholar" aria-hidden="true"></i></a></li>
+                  <!-- <li><a title="Linkedin" href="https://www.linkedin.com/in/haofan-frank-wang-366782130/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li> -->
+                  <li><a title="Github" href="https://github.com/stoneMo"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                  <!-- <li><a title="Zhihu" href="https://www.zhihu.com/people/haofanwang/"><i class="fab fa-zhihu" aria-hidden="true"></i></a></li> -->
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg col-wrapper">
+              <div class="Recent interests">
+                <div class="section-title">Research Interests</div>
+                <ul>
+                  <li>Computer Vision</li>
+                  <li>Self-Supervised Learning</li>
+                  <li>Multi-modal Learning</li>
+                  <!-- <li>Visual Reasoning and Graph Knowledge</li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sec-wrapper bio-wrapper" id="bio">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col col-wrapper">
+              <div class="section-title">Biography</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-wrapper">
+              <p>
+                Shentong Mo (莫申童) is currently a second-year master student at <a href="https://www.ece.cmu.edu">Carnegie Mellon University</a>.
+                Previously, he worked as a research intern with <a href="http://bernardghanem.com/">Prof. Bernard Ghanem</a> at KAUST (2020 Summer) and <a href="http://faculty.cs.tamu.edu/xiahu/">Prof. Xia (Ben) Hu</a> at Texas A&M University (2019 Summer). He obtained undergraduate degree from Dalian Maritime University in June 2019 and exchanged at UC Berkeley (worked at RISE Lab, Clipper Group) in 2017 Fall. He also spent time at OpenMined, RealAI, Everspry, Horizon Robotics and Institute of Software Chinese Academy of Sciences.
+              </p> 
+              
+              </p> 
+               Currently, he interns at MMU department of Kuaishou supervised by <a href="https://scholar.google.com/citations?hl=en&user=4nL1cDEAAAAJ&view_op=list_works&sortby=pubdate">Dr. Debing Zhang</a> on multi-modal retrieval. Open to research cooperations or full-time opportunities, if you are interested in, feel free to drop him an email!
+              </p> 
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="sec-wrapper bio-wrapper" id="New">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col col-wrapper">
+              <div class="section-title">News</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-wrapper">
+              </p>  
+              [04/2021]: One paper is accepted in Precognition Workshop at <b>CVPR</b> 2021!
+              </p>
+              </p>  
+                [04/2021]: One paper is accepted in AMFG Workshop at <b>CVPR</b> 2021!
+              </p>
+              <!-- </p>  
+                [04/2021]: One paper accepted to <b>NeurIPS</b> 2020!
+              </p>
+              </p>  
+                [04/2020]: One paper accepted to <b>CVPR</b> 2020 Workshop!
+              </p> -->
+            </div>
+          </div>
+        </div>
       </div>
 
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p>
-
-   </header> <!-- Header End -->
-
-
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
-
-      <div class="row">
-
-         <div class="three columns">
-
-            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
-
-         </div>
-
-         <div class="nine columns main-col">
-
-            <h2>About Me</h2>
-
-            <p>I am Shentong Mo (莫申童) from Beijing, China.
-
-            <br> I am currently a master student of Electrical and Computer Engineering in CMU.
-
-            <br> I have been exploring a variety of topics through my past research projects, such as <b>head pose estimation</b>, <b>forecasting</b>, <b>action localization</b>, <b>object detection</b>, and <b>face recognition</b>.
-
-            <br> I worked closely with Prof. Miao Xin from <em>Chinese Academy of Science</em>, Wee Peng Tay from <em>Nanyang Technological University</em>, and Qiang Zou from <em>Tianjin University</em>. I learned a great deal from my awesome advisors.
-
-            <!-- <div class="row">
-
-               <div class="columns contact-details">
-
-                  <h2>Contact Details</h2>
-                  <p class="address">
-						   <span>Jonathan Doe</span><br>
-						   <span>1600 Amphitheatre Parkway<br>
-						         Mountain View, CA 94043 US
-                     </span><br>
-						   <span>(123)456-7890</span><br>
-                     <span>anyone@website.com</span>
-					   </p>
-
-               </div>
-
-               <div class="columns download">
-                  <p>
-                     <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
-                  </p>
-               </div> -->
-
-            </div> <!-- end row -->
-
-         </div> <!-- end .main-col -->
-
-      </div>
-
-   </section> <!-- About Section End-->
-
-
-   <!-- Resume Section
-   ================================================== -->
-   <section id="resume">
-
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Carnegie Mellon University</h3>
-                  <p class="info">Master of Science in Electrical and Computer Engineering <span>&bull;</span> <em class="date">May 2020</em></p>
-
-                  <!-- <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
-                  </p> -->
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Tianjin University</h3>
-                  <p class="info">Master of Engineering in Electronics <span>&bull;</span> <em class="date">September 2016</em></p>
-
-                  <!-- <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                  </p> -->
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Tianjin University</h3>
-                  <p class="info">Bachelor of Engineering in Electrical and Electronics <span>&bull;</span> <em class="date">September 2012</em></p>
-
-                  <!-- <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                  </p> -->
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-
-      <!-- Work
-      ----------------------------------------------- -->
-      <div class="row work">
-
-         <div class="three columns header-col">
-            <h1><span>Projects</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Spatio-Temporal Action Localization</h3>
-                  <p class="info">Project <span>&bull;</span> <em class="date">August 2020 - Present</em></p>
-
-                  <p>
-                  <span><b>YOWOv2</b></span>: We will improve localization recall and classification accuracy based on the only end to end architecture in spatio-temporal action localization called You Only Watch Once (YOWO).
-                  <br><span><b>Datasets</b></span>: We propose to use the public Joint-annotated Human Motion Data Base (J-HMDB-21) and a private dataset of restaurant videos generously supported by CMU-based startup Agot.AI.
-                  <br><span><b>Long-term Feature Banks</b></span>: We will work on how to connect long-term context with short-term information to improve action recognition performance.
-                  <br><span><b>Evaluation Metrics</b></span>: We plan to apply the two popular metrics in the field of spatiotemporal action recognition, frame-mean Average Precision (mAP) and video-mAP, following the YOWO paper.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
+      <div class="sec-wrapper pub-wrapper" id="pub">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col col-wrapper">
+              <div class="section-title">Publications</div>
+            </div>
+          </div>
+          
+          
+          <div class="row align-items-center section-item">
+            <div class="col-xs-12 col-md-3 col-lg-3 col-wrapper">
+              <div class="figure">
+                <a href="http://iccv2021.thecvf.com/home"><img src="images/iccv.png" alt="[scipy]"></a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-9 col-lg-9 col-wrapper">
+              <div class="title">
+                <a href="http://iccv2021.thecvf.com/home">
+                  ICCV 2021 Anamynous Submission
+                </a>
+              </div>
+            </div>
+          
+          
+          <div class="row align-items-center section-item">
+            <div class="col-xs-12 col-md-3 col-lg-3 col-wrapper">
+              <div class="figure">
+                <a href="https://osf.io/kbhq5/"><img src="images/scipy.png" alt="[scipy]"></a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-9 col-lg-9 col-wrapper">
+              <div class="title">
+                <a href="https://osf.io/kbhq5/">
+                  Selective Federated Transfer Learning using Representation Similarity
+                </a>
+              </div>
+              <div class="authors">
+                <a href="https://tushar-semwal.github.io/">Tushar Semwal</a>,
+                  <me>Haofan Wang<sup>*</sup></me>,
+                  Chinnakotla Krishna Teja Reddy.
+              </div>
+              <div>NeurIPS-SpicyFL 2020, Poster</div>
+              <a href="https://osf.io/kbhq5/">[Paper]</a>
+            </div>
             
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Deep Variational Disentangled Audio-Visual Embeddings under Unsupervised Learning</h3>
-                  <p class="info">Project <span>&bull;</span> <em class="date">August 2020 - Present</em></p>
-
-                  <p>
-                  <span><b>Cross VAE</b></span>: We propose a cross-modal sequence VAE to disentangle both audio and image clips into time-invariant(identity) and time-variant(content) latent embeddings under unsupervised learning.
-                  <br><span><b>Datasets</b></span>: We will use VoxCeleb2 dataset as training datset in our experiment. VoxCeleb2 contains over 1 million utterances for 6,112 celebrities, extracted from videos uploaded to YouTube.
-                  <br><span><b>Evaluation Tasks</b></span>: We will evaluate our approach in three popular speech tasks, speaker recognition, automatic speech recogntion (ASR) and voice conversion. All of these tasks will be trained with VoxCeleb2 and then be evaluated on VoxCeleb1.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
+          
+          <div class="row align-items-center section-item">
+            <div class="col-xs-12 col-md-3 col-lg-3 col-wrapper">
+              <div class="figure">
+                <a href="https://arxiv.org/pdf/2006.06643v1.pdf"><img src="images/smooth.png" alt="[smooth]"></a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-9 col-lg-9 col-wrapper">
+              <div class="title">
+                <a href="https://arxiv.org/pdf/2006.06643v1.pdf">
+                  Smoothed Geometry for Robust Attribution
+                </a>
+              </div>
+              <div class="authors">
+                <a href="https://zifanw.github.io">Zifan Wang</a>,
+                  <me>Haofan Wang<sup>*</sup></me>,
+                  Shakul Ramkumar,
+                  <a href="https://www.cs.cmu.edu/~mfredrik/">Matt Fredrikson</a>,
+                  <a href="https://piotr.mardziel.com">Piotr Mardziel</a>,
+                  and
+                  <a href="https://www.andrew.cmu.edu/user/danupam/">Anupam Datta</a>
+              </div>
+              <div>NeurIPS 2020, Poster</div>
+              <a href="https://arxiv.org/pdf/2006.06643v1.pdf">[Paper]</a>
+              <a href="https://zifanw.github.io/resource/doc/smooth_poster.pdf">[Poster]</a>
+              <a href="https://github.com/zifanw/smoothed_geometry">[Code]</a>
+            </div>
+          
+          
+          <div class="row align-items-center section-item">
+            <div class="col-xs-12 col-md-3 col-lg-3 col-wrapper">
+              <div class="figure">
+                <a href="http://openaccess.thecvf.com/content_CVPRW_2020/html/w1/Wang_Score-CAM_Score-Weighted_Visual_Explanations_for_Convolutional_Neural_Networks_CVPRW_2020_paper.html"><img src="images/Score-CAM.png" alt="[Score-CAM]"></a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-9 col-lg-9 col-wrapper">
+              <div class="title">
+                <a href="http://openaccess.thecvf.com/content_CVPRW_2020/papers/w1/Wang_Score-CAM_Score-Weighted_Visual_Explanations_for_Convolutional_Neural_Networks_CVPRW_2020_paper.pdf">
+                  Score-CAM: Score-Weighted Visual Explanations for Convolutional Neural Networks
+                </a>
+              </div>
+              <div class="authors">
+                <me>Haofan Wang<sup>*</sup></me>,
+                <a href="https://zifanw.github.io">Zifan Wang</a>,
+                <a href="http://people.tamu.edu/~dumengnan/">Mengnan Du</a>,
+                <a href="http://people.tamu.edu/~nacoyang/">Fan Yang</a>,
+                Zijian Zhang,
+                Sirui Ding,
+                <a href="https://piotr.mardziel.com/">Piotr Mardziel</a>
+                and
+                <a href="http://faculty.cs.tamu.edu/xiahu/">Xia (Ben) Hu</a>
+              </div>
+              <div>IEEE CVPR 2020 Workshop on Fair, Data Efficient and Trusted Computer Vision</div>
+              <a href="https://github.com/haofanwang/Score-CAM">[Project Page]</a>
+              <a href="http://openaccess.thecvf.com/content_CVPRW_2020/papers/w1/Wang_Score-CAM_Score-Weighted_Visual_Explanations_for_Convolutional_Neural_Networks_CVPRW_2020_paper.pdf">[Paper]</a>
+              <a href="https://zifanw.github.io/resource/Score_CAM/slides.pdf">[Slides]</a>
+              <a href="https://mp.weixin.qq.com/s/naS_X8PdKQqveD5hbhMUoQ">[News]</a>
+            </div>
             
+            
+            <div class="col-xs-12 col-md-3 col-lg-3 col-wrapper">
+                <div class="figure">
+                  <a href="https://arxiv.org/abs/1901.06778"><img src="images/HeadPose.png" alt="[HeadPose]"></a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-9 col-lg-9 col-wrapper">
+              <div class="title">
+                <a href="https://arxiv.org/abs/1901.06778">
+                  Hybrid Coarse-fine Classification for Head Pose Estimation
+                </a>
+              </div>
+              <div class="authors">
+                <me>Haofan Wang<sup>*</sup></me>,
+                Zhenghua Chen,
+                and
+                <a href="https://scholar.google.com/citations?user=Ji5ISB8AAAAJ&hl=en">Yi Zhou</a>,
+              </div>
+              <div>ArXiv 1901.06778</div>
+              <a href="https://github.com/haofanwang/accurate-head-pose">[Project Page]</a>
+              <a href="https://arxiv.org/abs/1901.06778">[Paper]</a>
+            </div>
 
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Long-term Head Pose Forecasting Conditioned on the Gaze Prior</h3>
-                  <p class="info">Computer Vision Algorithm Engineer <span>&bull;</span> <em class="date">March 2020 - August 2020</em></p>
-
-                  <p>
-                  <span><b>CVGAE</b></span>: We propose the conditional variational graph autoencoder (CVGAE), a deep conditional generative
-                  model for self-supervised learning on graph-structured output prediction using Gaussian latent variables.
-                  <br><span><b>One-to-many Mappings</b></span>: CVGAE is capable of learning restricted one-to-many mappings conditioned on the
-                  graph-structured input data.
-                  <br><span><b>Gaze Prior</b></span>: We introduce a gaze prior as the condition for the proposed CVGAE on long-term head pose
-                  forecasting problems.
-                  <br><span><b>Experiment Results</b></span>: Experiments demonstrate the effectiveness of our proposed model and the importance of
-                  the gaze prior condition for this task. We achieve superior long-term head pose forecasting performance on the BIWI dataset.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Distributed Face Recognition Algorithms for Multi-camera Networks</h3>
-                  <p class="info">Research Assistant <span>&bull;</span> <em class="date">August 2018 - November 2018</em></p>
-
-                  <p>
-                  <span><b>Data Collection</b></span>: We collect our own detected faces from lab members to build train set and create face feature
-                  library for MobilefaceNet verification.
-                  <br><span><b>Model Training</b></span>: We fintune MobilefaceNet with pretrained weights on our train set, achieve 99.4% AP on LFW
-                  dataset and 78.6% AP on our test set.
-                  <br><span><b>Multi-camera</b></span>: We apply MobilefaceNet to Raspberry Pi devices that are connected to multi-camera for real-time
-                  face recognition and inference the pipeline latency.
-                  <br><span><b>Pipeline</b></span>: We utilize Multi-task Cascaded Convolutional Networks (MTCNN) for detecting face, apply
-                  MobileNet/MobilefaceNet to extract face features and acquire recognition results by calculating cosine similarity between these features and those from our feature library.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Algorithms for Real-time Detection of Intestine Polyps</h3>
-                  <p class="info">Research Assistant <span>&bull;</span> <em class="date">March 2017 - July 2019</em></p>
-
-                  <p>
-                  <span><b>Data Collection and Labeling</b></span>: We collect around 10,000 polyp images from four hospitals that we collaborated
-					and finish labelling with the help of our experts from these hospitals.
-                  <br><span><b>Data Augmentation</b></span>: We utilize several data augmentation techniques, like horizontal flipping, cropping, padding
-					and rotation, to our original data for increasing the number of our training set to 60,000.
-                  <br><span><b>Model Training</b></span>: We use Detectron2/Darknet to train the Faster R-CNN/YOLOv2 model respectively on the
-					training set and achieve 80.5% mAP and 78.4% mAP on our test set (10,000).
-                  <br><span><b>CPDS</b></span>: We apply the trained model in a system for recognizing intestine polyps for real-time detection and
-					conduct online learning with the addition of new polyp images to achieve a computer-aided polyp diagnosis system (CPDS).
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
-
-      <!-- Skills
-      ----------------------------------------------- -->
-      <div class="row skill">
-
-         <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <p>
-           	<span><b>DL Frameworks</b></span>: PyTorch, TensorFlow, Keras, and MegEngine(<b>Contributor</b>) 
-           	<br><span><b>Utilities</b></span>: MATLAB, Octave, and LaTeX 
-           	<br><span><b>OS Scripting</b></span>: Linux Shell Scripts and AppleScripts 
-           	<br><span><b>Version Control</b></span>: Git commands and GitFlow
-            </p>
-
-				<div class="bars">
-
-				   <ul class="skills">
-					   <li><span class="bar-expand css"></span><em>Python</em></li>
-                  <li><span class="bar-expand html5"></span><em>C/C++</em></li>
-                  		<li><span class="bar-expand wordpress"></span><em>Java</em></li>
-                       	<li><span class="bar-expand jquery"></span><em>C#</em></li>
-						<li><span class="bar-expand wordpress"></span><em>CSS</em></li>
-						<li><span class="bar-expand wordpress"></span><em>HTML5</em></li>
-					</ul>
-
-				</div><!-- end skill-bars -->
-
-      </div> <!-- End skills -->
-
-   </section> <!-- Resume Section End-->
-
-      <!-- Publication Section
-   ================================================== -->
-   <section id="publications">
-      <!-- Work
-      ----------------------------------------------- -->
-      <div class="row skill">
-
-         <div class="three columns header-col">
-            <h1><span>Conference</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-	        <h3>CVGAE: long-term head pose forecasting conditioned on the gaze prior</h3>
-          	<p class="info">Shentong Mo, Miao Xin. 2020 <span>&bull;</span> <em>To submit</em></p>
-
-          	<p>
-	          In unsupervised learning, variational graph auto-encoder (VGAE) has shown evident advantages in learning latent representation of graph-structured data, and generating diverse predictions through structured one-to-many mapping. However,most of the generated results are always far from the reality due to the lack of the prior restriction. In this paper, we propose the conditional variational graph autoencoder (CVGAE), a deep conditional generative model for self-supervised learning on graph-structured output prediction using Gaussian latent variables. This model is capable of learning restricted one-to-many mappings conditioned on the graph-structured input data. Furthermore, we introduce a gaze prior as the condition for the proposed CVGAE on long-term head pose forecasting problems. Experiments demonstrate the effectiveness of our proposed model and the importance of the gaze prior condition for this task. We achieve superior long-term head pose forecasting performance on the BIWI dataset as compared to most existing methods.
-	        </p>
-             <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
-   </section> <!-- Resume Section End-->
-
-   <!-- Portfolio Section
-   ================================================== -->
-
-
-
-   <!-- Call-To-Action Section
-   ================================================== -->
-   
-
-
-   <!-- Contact Section
-   ================================================== -->
-   <!-- Contact Section End-->
-
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-            <ul class="social-links">
-               <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-               <li><a href="#"><i class="fa fa-skype"></i></a></li> -->
-               <li><a href="https://github.com/stoneMo"><i class="fa fa-github"></i></a></li>
-               <li><a href="mailto:shentonm@andrew.cmu.edu"><i class="fa fa-envelope-o"></i></a></li>
-            </ul>
-
-<!--             <ul class="copyright">
-               <li>&copy; Copyright 2014 CeeVee</li>
-               <li>Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>   
-            </ul>  -->
-
-         </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
+          </div>
+        </div>
+      </div>
+      
+<!--       <div class="sec-wrapper bio-wrapper" id="New">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col col-wrapper">
+              <div class="section-title">Teaching</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-wrapper">
+              <p>
+                [Teaching Assistant] 2020 Summer 18-793: Image and Video Processing (Instructor: Prof. <a href="https://users.ece.cmu.edu/~saswin/">Aswin C Sankaranarayanan</a>)
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-   </footer> <!-- Footer End-->
+      <div class="sec-wrapper exp-wrapper" id="edu">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col col-wrapper">
+              <div class="section-title">Education</div>
+            </div>
+          </div>
+          <div class="row align-items-center section-item">
+            <div class="col-md-9 col-wrapper">
+              <div class="title">
+                <a href="https://www.cmu.edu">Carnegie Mellon University</a>
+              </div>
+              <div class="info">
+                <div>Master Student in Electrical and Computer Engineering</a></div>
+                <div class="location">Mountain View, CA</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-wrapper">
+              <time>Jan. 2020 - Present</time>
+            </div>
+          </div>
 
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+          <div class="row align-items-center section-item">
+              <div class="col-md-9 col-wrapper">
+                <div class="title">
+                  <a href="https://www.berkeley.edu">University of California, Berkeley</a>
+                </div>
+                <div class="info">
+                  <div>Exchange Student in Electrical Engineering and Computer Sciences</a></div>
+                  <div class="location">Berkeley, CA</div>
+                </div>
+              </div>
+              <div class="col-md-3 col-wrapper">
+                <time>Aug. 2017 - Dec. 2017</time>
+              </div>
+            </div>
 
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
+          <div class="row align-items-center section-item">
+            <div class="col-md-9 col-wrapper">
+              <div class="title">
+                <a href="https://english.dlmu.edu.cn">Dalian Maritime University</a>
+              </div>
+              <div class="info">
+                <div>B.E. in Intelligence Science and Technology</div>
+                <div class="location">Dalian, China</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-wrapper">
+              <time>Sep. 2015 - Jun. 2019</time>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sec-wrapper exp-wrapper" id="exp">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col col-wrapper">
+              <div class="section-title">Experience</div>
+            </div>
+          </div>
 
-</body>
+          <div class="row align-items-center section-item">
+              <div class="col-md-9 col-wrapper">
+                <div class="title">
+                  <a href="https://www.ece.cmu.edu">Carnegie Mellon University</a>
+                </div>
+                <div class="info">
+                  <div>Research Assistant | <a href="https://www.fairlyaccountable.org">Accountable Systems Laboratory</a></div>
+                  <div>Advisor: <a href="https://piotr.mardziel.com/">Prof. Piotr Mardziel</a></div>
+                  <div class="location">Mountain View, CA</div>
+                </div>
+              </div>
+              <div class="col-md-3 col-wrapper">
+                <time>Jan. 2020 - Present</time>
+              </div>
+          </div>
 
+          <div class="row align-items-center section-item">
+            <div class="col-md-9 col-wrapper">
+              <div class="title">
+                <a href="https://www.real-ai.cn/">RealAI</a>
+              </div>
+              <div class="info">
+                <div>Research Intern | Algorithm Group</div>
+                <div>Advisors: Zihao Xiao</div>
+                <div class="location">Beijing, China</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-wrapper">
+              <time>Oct. 2019 - Dec. 2019</time>
+            </div>
+          </div>
+
+          <div class="row align-items-center section-item">
+            <div class="col-md-9 col-wrapper">
+              <div class="title">
+                <a href="https://www.tamu.edu">Texas A&M University</a>
+              </div>
+              <div class="info">
+                <div>Research Intern | <a href="http://faculty.cs.tamu.edu/xiahu/">Data Analytics at Texas A&M Lab</a></div>
+                <div>Advisor: <a href="http://faculty.cs.tamu.edu/xiahu/">Prof. Xia (Ben) Hu</a></div>
+                <div class="location">College Station, TX</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-wrapper">
+              <time>Jul 2019 - Sep 2019</time>
+            </div> 
+          </div>
+
+          <div class="row align-items-center section-item">
+              <div class="col-md-9 col-wrapper">
+                <div class="title">
+                  <a href="http://www.footprintmatcher.com">Everspry</a>
+                </div>
+                <div class="info">
+                  <div>Research Intern | Development Group</div>
+                  <div>Advisors: <a href="https://scholar.google.com/citations?user=Y-GsOWEAAAAJ&hl=zh-CN">Junjian Cui</a></div>
+                  <div class="location">Dalian, China</div>
+                </div>
+              </div>
+              <div class="col-md-3 col-wrapper">
+                <time>Apr 2019 - May. 2019</time>
+              </div>
+            </div>
+
+          <div class="row align-items-center section-item">
+            <div class="col-md-9 col-wrapper">
+              <div class="title">
+                <a href="https://www.horizon.ai">Horizon Robotics</a>
+              </div>
+              <div class="info">
+                <div>Research Intern | Self-Driving Group</div>
+                <div>Advisors: Zhenghua Chen</div>
+                <div class="location">Nanjing, China</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-wrapper">
+              <time>Jul 2018 - Jan. 2019</time>
+            </div>
+          </div>
+
+          <div class="row align-items-center section-item">
+              <div class="col-md-9 col-wrapper">
+                <div class="title">
+                  <a href="http://english.is.cas.cn">Institute of Software, Chinese Academy of Sciences</a>
+                </div>
+                <div class="info">
+                  <div>Research Intern | Collaborative Innovation Center</div>
+                  <div>Advisors: Jie Yu and Zhiyu Huang</div>
+                  <div class="location">Beijing, China</div>
+                </div>
+              </div>
+              <div class="col-md-3 col-wrapper">
+                <time>Dec. 2017 - Mar. 2018</time>
+              </div>
+            </div>
+
+          <div class="row align-items-center section-item">
+            <div class="col-md-9 col-wrapper">
+              <div class="title">
+                <a href="https://www.berkeley.edu">University of California, Berkeley</a>
+              </div>
+              <div class="info">
+                <div>Undergraduate Research Assistant | <a href="https://rise.cs.berkeley.edu/">Berkeley RISE Lab</a></div>
+                <div>Advisors: <a href="https://www.linkedin.com/in/corey-zumar-0a770982/">Corey Zumar</a></div>
+                <div class="location">Berkeley, CA</div>
+              </div>
+            </div>
+            <div class="col-md-3 col-wrapper">
+              <time>Oct. 2017 - Dec. 2017</time>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+    
+    <div class="sec-wrapper bio-wrapper" id="Services">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col col-wrapper">
+              <div class="section-title">Services</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-wrapper">
+              <p>
+                Conference Reviewer: <a href="https://nips.cc/">NeurIPS'21</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <div class="sec-wrapper bio-wrapper" id="Collaborators">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col col-wrapper">
+              <div class="section-title">Collaborators</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-wrapper">
+              <p>
+                <a href="https://zifanw.github.io">Zifan Wang(CMU)</a>, <a href="https://stonemo.github.io/">Shentong Mo(CMU)</a>, <a href="https://dblp.org/pid/249/9914.html/">Jiachen Lian(UC Berkeley)</a>, <a href="https://ghli.org">Guohao Li(KAUST)</a>,  <a href="http://people.tamu.edu/~dumengnan/">Mengnan Du(TAMU)</a>, <a href="https://tushar-semwal.github.io/">Tushar Semwal(UoE)</a>, <a href="https://dblp.org/pid/80/3176.html/">Weijiang Yu(SYSU)</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <!-- Popper before Bootstrap -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
